@@ -8,8 +8,31 @@ var textToSpeech = watson.text_to_speech({
   url: 'https://stream.watsonplatform.net/text-to-speech/api',
 });
 
+
+
+
+var myvar = '<speak>'+
+'      I have been assigned to handle your order status request.'+
+'      <express-as type=\"Apology\">'+
+'         I am sorry to inform you that the items you requested are backordered.'+
+'         We apologize for the inconvenience.'+
+'      </express-as>'+
+'      <express-as type=\"Uncertainty\">'+
+'         We don\'t know when the items will become available. Maybe next week,'+
+'         but we are not sure at this time.'+
+'      </express-as>'+
+'      <express-as type=\"GoodNews\">'+
+'         But because we want you to be a satisified customer, we are giving you'+
+'         a 50% discount on your order!'+
+'      </express-as>'+
+'   </speak>';
+
+// http://pojo.sodhanalibrary.com/string.html
+
+
+
 var params = {
-   "text": '<voice-transformation type="Young" strength="80%">Could you provide us with new information?</voice-transformation>',
+   "text": myvar,
    'voice': 'en-US_AllisonVoice',
    'accept': 'audio/wav'
 };
