@@ -9,7 +9,8 @@ var app = express();
 app.use(morgan('dev'));
 app.use('/textToSpeech', require('./routes/textToSpeech.js'));
 app.use('/personality', require('./routes/personality.js'));
-app.use('/twitter', require('./routes/twitter.js'));
+app.use('/twitter', require('./routes/personality.js'));
+app.use('/speechToText', require('./routes/speechToText.js'));
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
