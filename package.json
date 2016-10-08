@@ -1,0 +1,26 @@
+{
+  "name": "ibmhackathon-hh",
+  "version": "1.0.0",
+  "description": "oct 8 hackathon at mLove",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grod220/IBMHackathonHH.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grod220/IBMHackathonHH/issues"
+  },
+  "homepage": "https://github.com/grod220/IBMHackathonHH#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0"
+  }
+}
