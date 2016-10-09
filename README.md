@@ -8,7 +8,7 @@ IBM Hackathon 2016 Hamburg (07.-09.10.2016)
 * Ha Duong (haduong / Ha1309)
 
 ## Challenge: Improve the lives of dementia patients.
-* [Live Demo-Link](https://github.com/IBM-Hackathon/Hamburg2016/wiki)
+* [Live Demo-Link](https://drive.google.com/file/d/0BwYMrUodNxh5bFpyblIzcDFSMWM/view?usp=sharing)
 * [Code Link](https://github.com/grod220/IBMHackathonHH)
 * [Presentation Link](https://docs.google.com/presentation/d/1UmDFzwfNmaFwhJ3TnK6yenQ9Qnbncmz98Kv0oZJaXTA/edit?usp=sharing)
 
