@@ -2,7 +2,6 @@
 var router = require('express').Router();
 module.exports = router;
 var Twitter = require('twitter');
-var rp = require('request-promise');
 
 var client = new Twitter({
   consumer_key: '8BXQ2lBDoRRDLQE9aWo4wVeOo',
@@ -12,11 +11,6 @@ var client = new Twitter({
 });
 
 router.get('/', function(req,res) {
-  // client.get('/users/show.json', {screen_name: 'grod220'}, function(error, profile, response) {
-  //   res.send(response);
-
-    // var profilePhoto = profile.profile_image_url.replace(/_normal/, '');
-    // var profileBanner = profile.profile_banner_url;
     client.get('/statuses/user_timeline.json', {screen_name: '2050City', count: 200}, function(error, tweets, response) {
       var holder = '';
       for (var i=0; i<tweets.length; i++) {
@@ -27,5 +21,4 @@ router.get('/', function(req,res) {
         tweets: b
       });
     });
-  // });
 });

@@ -8,7 +8,6 @@ var textToSpeech = watson.text_to_speech({
   url: 'https://stream.watsonplatform.net/text-to-speech/api',
 });
 
-// http://pojo.sodhanalibrary.com/string.html
 
 var voiceTrans = '<voice-transformation type="Custom" pitch_range="30%" pitch="20%" glottal_tension="-50%">';
 var closeTag = '</voice-transformation>';
@@ -32,10 +31,14 @@ router.get('/', function(req, res, next) {
   transcript.on('response', function(response) {
       response.headers['content-disposition'] = 'attachment; filename=transcript.wav';
   });
+
+  // SEND TO MEMORY DATABASE
   transcript.pipe(res);
 });
 
 module.exports = router;
+
+// http://pojo.sodhanalibrary.com/string.html
 
 
 

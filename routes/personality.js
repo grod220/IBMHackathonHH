@@ -7,7 +7,6 @@ var personality_insights = watson.personality_insights({
   version: 'v2'
 });
 
-// how the hell can you get this to work...?
 var params = {
    "text": [
       {
