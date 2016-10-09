@@ -15,8 +15,9 @@ IBM Hackathon 2016 Hamburg (07.-09.10.2016)
 ## Architektur
 * Personality Insights
 * Text To Speech
-* (Speech to Text)
-* (Conversation)
-* (Tone Analyzer)
+* Speeach To Text
+* AlchemyLanguage
+* Twitter API
+* Tone Analyzer
 * NAOqi
 * Node
